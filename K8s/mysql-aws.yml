@@ -32,9 +32,6 @@ spec:
       containers:
         - name: mysql
           image: mysql:5.6
-          volumeMounts:
-            - mountPath: "/var/lib/mysql"
-              name: mysql-vol
           env:
             - name: MYSQL_DATABASE
               value: 'test'
